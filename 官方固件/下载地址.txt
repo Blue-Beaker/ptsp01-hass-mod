@@ -1,0 +1,1 @@
+http://api.seaing.net:8080/seaingui/fileupload/iotapi/upload/fireware/PTSP01-V1.0.3.3492.bin

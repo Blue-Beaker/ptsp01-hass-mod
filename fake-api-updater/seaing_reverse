@@ -1,0 +1,20 @@
+
+server {
+	listen 8080;
+	access_log /路径/fake-api-updater/nginx.log;
+	location / {
+		proxy_pass http://182.92.182.42:8080;
+		
+	}
+	location /device_firmware/check_version{
+		proxy_method GET;
+		proxy_pass http://127.0.0.1:8080/seaingui/fileupload/iotapi/upload/fireware/mod.json;
+	}
+	location /seaingui/fileupload/iotapi/upload/fireware/{
+		autoindex on;
+		autoindex_exact_size off;
+		autoindex_localtime on;
+		charset utf-8;
+		alias /路径/fake-api-updater/;
+	}
+}
