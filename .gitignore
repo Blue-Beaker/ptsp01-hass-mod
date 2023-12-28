@@ -1,0 +1,15 @@
+# dot files
+/hardware_mod/.vscode/launch.json
+/hardware_mod/.settings
+/hardware_mod/.eide/log
+/hardware_mod/.eide.usr.ctx.json
+
+# project out
+/hardware_mod/build
+/hardware_mod/bin
+/hardware_mod/obj
+/hardware_mod/out
+
+# eide template
+*.ept
+*.eide-template
